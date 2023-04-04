@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Велосипедный трек</title>
+<meta content="charset=utf-8">
+<style> 
+  body { margin: 0; padding: 0; overflow: hidden; }
+</style>
+<script type="text/javascript" src="three.min_.js"></script> 
+<script type="text/javascript" src="velotrack_script.js"></script> 
+<script type="text/javascript" src="TrackballControls.js"></script> 
+<script src="stats.min.js"></script>
+<link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+  <div style="position: fixed; top: 1%; right: 0.5%;">
+    <div style="padding: 12px; border: 2px solid white;background-color: rgba(255, 255, 255, .25); color: black;font-weight: bold; font-size: 14px; text-align: center; border-radius: 25px;">
+      <div style="padding: 0 0 12px 0;font: 1em sans-serif;">УПРАВЛЕНИЕ СВЕТОМ</div>
+      <div style="display: flex; justify-content: center;">
+        <button class="btnOffOn" id="lightOn" style="margin-right: 10%;">Вкл.</button>
+        <button class="btnOffOn" id="lightOff">Выкл.</button>
+      </div>
+      <div style="margin-top: 10%;">
+        <button class="btnControl" id="lightForward">↥</button>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <button class="btnControl" id="lightLeft" style="margin-right: 10%;">↤</button>
+        <button class="btnControl" id="lightRight">↦</button>
+      </div>
+      <div>
+        <button class="btnControl" id="lightBack">↧</button>
+      </div>
+    </div>
+    <div id="stats" style="position: fixed; top: 1%; right: 0.5%;"></div>
+  </div>
+  <div id="MyWebGLApp"></div>
+</body>
+</html>
